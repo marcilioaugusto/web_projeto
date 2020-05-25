@@ -25,10 +25,16 @@ body{
     height: 350; /* altura do elemento */
 }
 
-/* criando uma classe no css, chamada titulo */
+/* criando uma classe no css, chamada titulo
 .titulo{
     margin-top: 400px;
+} */
+
+/* margim do texto Historia do Cafe */
+#titulo h1{
+    margin-top: 300px;
 }
+
 
 p{
     text-align: justify;
