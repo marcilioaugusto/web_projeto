@@ -1,4 +1,109 @@
-/* Zerando a pagina do navegador */
+/*Zerando a página do navegador*/
 *{
-    margin: 0px; 
+    margin: 0px;
+}
+
+body{
+    background-color: black; /* cor de fundo da pagina*/
+}
+
+#estrutura {
+    background-color: white; /* cor de fundo */
+    width: 90%; /*largura*/
+    margin-left: auto; /* margem a esquerda */
+    margin-right: auto; /* margin a direita */
+}
+
+#estrutura #titulo {
+    background-image: url("../img/cafe2.jpg"); /*imagem dentro do titulo*/
+    background-position: -400px -300px; /* posição x e y */
+    color: white;
+    font-size: 15pt;
+    font-family: arial;
+    padding-top: 10px; /*espaçamento no topo interno*/
+    padding-left: 10px; /* espaçamento a esquerda */
+    height: 350; /* altura do elemento */
+}
+
+/* criando uma classe no css, chamada titulo */
+.titulo{
+    margin-top: 400px;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px; /* recúo de parágrafo */
+    font-family: century Gothic;
+    font-size: 14pt;
+}
+#estrutura #menu ul{
+    padding: 0px; /* espaçamento */
+    margin-bottom: 30px; /* margem entre menu e conteudo*/
+}
+
+#estrutura #menu li{
+    /* retira as marcas do marcador */
+    list-style: none;
+    /* alinhar os links na horizontal */
+    display: inline-block;
+    width: 238px;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+#estrutura #menu a{
+    /* a href*/
+    font-family: arial;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #800;
+    background-color: #ff8;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#estrutura #menu a:hover{ /* quando o usuario passar o mouse */
+    background-color: #800;
+    color: white;
+}
+
+#estrutura #menu a.atual{ /* item de menu selecionado */
+    background-color: #ff9900;
+}
+
+#estrutura #conteudo h2{
+    font-family: Arial;
+    font-size: 14pt;
+    padding: 10px;
+}
+/* firmatação para o texto geral */
+#estrutura #conteudo .texthome{
+    font-family: 'times New Roman';
+    font-size: 14pt;
+    line-height: 14pt;
+    padding-left: 20px;
+}
+#rodape{
+    padding: 20px 0px; 
+    font-family: arial;
+    background-color: #800;
+    color: white;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#estrutura #conteudo .imghome img{ /* estilizando imagem */
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+#estrutura #conteudo .imghome{text-align: center;}
+
+/*forçar que o rodape fique no final da pagina(para baixo)*/
+
+.abaixar{
+    clear: both;
 }
