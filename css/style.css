@@ -83,12 +83,19 @@ p{
     font-size: 14pt;
     padding: 10px;
 }
+
+/* formatação titulo  do texto geral */
+#estrutura #conteudo h1{
+    padding: 0 0 10 30px;
+}
+
 /* firmatação para o texto geral */
 #estrutura #conteudo .texthome{
     font-family: 'times New Roman';
     font-size: 14pt;
     line-height: 14pt;
     padding-left: 20px;
+    padding-right: 30px;
 }
 #rodape{
     padding: 20px 0px; 
