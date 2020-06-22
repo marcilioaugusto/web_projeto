@@ -45,16 +45,28 @@ p{
 #estrutura #menu ul{
     padding: 0px; /* espaçamento */
     margin-bottom: 30px; /* margem entre menu e conteudo*/
+
+    /* container quebra linha jogando itens para baixo */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #estrutura #menu li{
     /* retira as marcas do marcador */
     list-style: none;
     /* alinhar os links na horizontal */
-    display: inline-block;
+    /* display: inline-block; */
     width: 238px;
     text-align: center;
     padding: 0px 0px;
+    margin: 2px;
+    border: tomato solid;
+
+    /* alinhar os links na horizontal */
+    /* itens flex expandem para ocupar totalmente o container */
+    /* itens diminuem para caber no container */
+    display: flex;
+    flex: 1 1 250px;
 }
 
 #estrutura #menu a{
@@ -66,7 +78,7 @@ p{
     background-color: #ff8;
     width: 100%;
     display: inline-block;
-    padding: 10px 0px;
+    padding: 10px 10px;
 }
 
 #estrutura #menu a:hover{ /* quando o usuario passar o mouse */
